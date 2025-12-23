@@ -12,8 +12,8 @@ source.include_exts = py,png,jpg,kv,atlas,yaml
 # 版本信息
 version = 0.1
 
-# 依赖库
-requirements = python3,kivy,opencv,numpy,pillow
+# 依赖库（简化版 - 移除难以编译的库）
+requirements = python3,kivy
 
 # Android特定配置
 android.permissions = INTERNET,WRITE_EXTERNAL_STORAGE,READ_EXTERNAL_STORAGE,CAMERA,BIND_ACCESSIBILITY_SERVICE,SYSTEM_ALERT_WINDOW
