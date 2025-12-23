@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center">
+
+    <!-- 标题 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AI Game Bot"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="32dp"/>
+
+    <!-- 状态显示 -->
+    <TextView
+        android:id="@+id/statusText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="状态: 未知"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:padding="16dp"
+        android:background="@android:color/darker_gray"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="32dp"/>
+
+    <!-- 启动按钮 -->
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="启动机器人"
+        android:textSize="18sp"
+        android:layout_marginBottom="16dp"
+        android:enabled="false"/>
+
+    <!-- 停止按钮 -->
+    <Button
+        android:id="@+id/stopButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="停止机器人"
+        android:textSize="18sp"
+        android:layout_marginBottom="16dp"
+        android:enabled="false"/>
+
+    <!-- 设置按钮 -->
+    <Button
+        android:id="@+id/settingsButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="开启无障碍服务"
+        android:textSize="18sp"/>
+
+    <!-- 说明文字 -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="使用说明:\n1. 点击'开启无障碍服务'\n2. 找到并开启本应用的服务\n3. 返回APP点击'启动机器人'\n4. 打开游戏即可自动运行"
+        android:textSize="14sp"
+        android:gravity="start"
+        android:padding="16dp"
+        android:layout_marginTop="32dp"/>
+
+</LinearLayout>

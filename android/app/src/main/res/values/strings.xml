@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">AI Game Bot</string>
+    <string name="accessibility_service_description">
+        AI游戏机器人\n\n
+        使用YOLO目标检测自动识别游戏元素并执行操作。\n\n
+        功能:\n
+        • 自动检测游戏中的敌人、按钮等元素\n
+        • 智能决策并自动点击操作\n
+        • 支持自定义游戏策略\n\n
+        注意:仅用于学习研究用途
+    </string>
+</resources>
