@@ -1,0 +1,60 @@
+# AI Game Bot Configuration
+# AI自动游戏机器人配置文件
+
+# 设备配置
+device:
+  platform: "android"           # 平台: android 或 ios
+  device_id: null               # 设备ID (null表示自动检测)
+  wda_port: 8100               # iOS WDA端口 (仅iOS)
+
+# YOLO模型配置
+model:
+  path: "models/best.pt"       # 模型路径
+  conf_threshold: 0.25         # 置信度阈值
+  iou_threshold: 0.45          # NMS IOU阈值
+  use_gpu: true                # 是否使用GPU
+
+# 游戏类别配置
+classes:
+  # 根据你的游戏自定义类别
+  - enemy              # 敌人
+  - skill_button       # 技能按钮
+  - start_button       # 开始按钮
+  - claim_button       # 领取按钮
+  - hp_bar             # 血条
+  - menu_bg            # 菜单背景
+  - loading_icon       # 加载图标
+  - reward_icon        # 奖励图标
+
+# 策略配置
+strategy:
+  name: "SimpleStrategy"       # 策略名称
+  action_cooldown: 0.5         # 操作冷却时间(秒)
+  enable_random_delay: true    # 启用随机延迟
+  random_delay_range: [0.3, 0.8]  # 随机延迟范围(秒)
+
+# 运行配置
+runtime:
+  fps_limit: 30                # FPS限制
+  save_screenshots: false      # 是否保存截图
+  screenshot_interval: 10      # 截图间隔(帧)
+  enable_visualization: true   # 启用可视化
+  log_level: "INFO"            # 日志级别: DEBUG, INFO, WARNING, ERROR
+
+# 日志配置
+logging:
+  log_dir: "logs"              # 日志目录
+  log_file: "game_bot.log"     # 日志文件名
+  max_size_mb: 10              # 单个日志文件最大大小(MB)
+  backup_count: 5              # 日志备份数量
+
+# 训练配置 (可选)
+training:
+  data_dir: "data"             # 数据目录
+  train_ratio: 0.8             # 训练集比例
+  val_ratio: 0.1               # 验证集比例
+  test_ratio: 0.1              # 测试集比例
+  epochs: 100                  # 训练轮数
+  batch_size: 16               # 批次大小
+  img_size: 640                # 输入图像尺寸
+  workers: 4                   # 数据加载线程数

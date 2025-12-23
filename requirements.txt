@@ -1,0 +1,32 @@
+# AI Game Bot Dependencies
+# AI自动游戏机器人依赖
+
+# Core Dependencies - 核心依赖
+ultralytics>=8.0.0          # YOLOv8
+opencv-python>=4.8.0        # 图像处理
+numpy>=1.24.0               # 数值计算
+pillow>=10.0.0              # 图像库
+
+# Device Control - 设备控制
+uiautomator2>=2.16.0        # Android自动化
+adbutils>=1.2.0             # ADB工具
+facebook-wda>=1.4.0         # iOS自动化 (可选)
+
+# Optional: Performance - 性能优化 (可选)
+onnxruntime-gpu>=1.16.0     # ONNX GPU加速
+# onnxruntime>=1.16.0       # ONNX CPU版本
+
+# Optional: Training - 训练相关 (可选)
+torch>=2.0.0                # PyTorch
+torchvision>=0.15.0         # PyTorch视觉库
+labelImg>=1.8.6             # 数据标注工具
+
+# Utilities - 工具库
+pyyaml>=6.0                 # YAML配置文件
+tqdm>=4.65.0                # 进度条
+colorama>=0.4.6             # 终端颜色输出
+
+# Development - 开发工具 (可选)
+pytest>=7.4.0               # 测试框架
+black>=23.0.0               # 代码格式化
+flake8>=6.0.0               # 代码检查
