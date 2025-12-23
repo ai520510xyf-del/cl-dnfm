@@ -11,8 +11,6 @@ source.include_exts = py,png,jpg,kv,atlas,yaml
 
 # 版本信息
 version = 0.1
-version.regex = __version__ = ['"](.*)['"]
-version.filename = %(source.dir)s/main.py
 
 # 依赖库
 requirements = python3,kivy,opencv,numpy,pillow
