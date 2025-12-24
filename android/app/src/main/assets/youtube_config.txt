@@ -1,0 +1,23 @@
+# YouTube UI Detection Model Config
+#
+# Model: youtube_detector.tflite
+# Base: MobileNetV2 SSD
+# Input: 300x300 RGB
+# Classes: 10
+
+# Detection targets:
+# 0: search_box - 搜索框
+# 1: home_tab - 首页标签
+# 2: shorts_tab - Shorts标签
+# 3: subscriptions_tab - 订阅标签
+# 4: library_tab - 资料库标签
+# 5: video_thumbnail - 视频缩略图
+# 6: play_button - 播放按钮
+# 7: like_button - 点赞按钮
+# 8: share_button - 分享按钮
+# 9: comment_button - 评论按钮
+
+# Detection strategy:
+# - Use template matching for UI elements
+# - Combine with MobileNet features
+# - Confidence threshold: 0.5

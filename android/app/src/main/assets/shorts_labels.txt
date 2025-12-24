@@ -1,0 +1,9 @@
+video_content
+like_button
+dislike_button
+comment_button
+share_button
+home_nav
+shorts_nav
+subscriptions_nav
+profile_nav

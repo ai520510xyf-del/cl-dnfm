@@ -1,0 +1,9 @@
+# Supabase Configuration
+# 重要：不要将 local.properties 提交到Git！
+# 复制此文件为 local.properties 并填入你的实际凭证
+
+SUPABASE_URL=https://your-project.supabase.co
+SUPABASE_ANON_KEY=your_anon_public_key_here
+
+# Android SDK路径（如果需要）
+# sdk.dir=/path/to/Android/sdk

@@ -1,0 +1,10 @@
+search_box
+home_tab
+shorts_tab
+subscriptions_tab
+library_tab
+video_thumbnail
+play_button
+like_button
+share_button
+comment_button
