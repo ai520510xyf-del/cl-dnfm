@@ -315,6 +315,8 @@ class MainActivityNew : AppCompatActivity() {
                 )
 
                 for (model in assetModels) {
+                    if (hasModel) break  // 已找到模型，退出循环
+
                     try {
                         assets.open(model).use { inputStream ->
                             val size = inputStream.available()
@@ -322,11 +324,10 @@ class MainActivityNew : AppCompatActivity() {
                                 modelPath = model  // 使用相对路径（assets路径）
                                 hasModel = true
                                 android.util.Log.i("MainActivityNew", "✅ 使用预打包模型: $modelPath (${size / 1024}KB)")
-                                break
                             }
                         }
                     } catch (e: java.io.FileNotFoundException) {
-                        continue
+                        // 继续尝试下一个模型
                     }
                 }
             }
